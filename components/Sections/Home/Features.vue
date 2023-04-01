@@ -38,6 +38,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="features__videos">
+                    <PlayerVideoPlayer/>
+                </div>
             </div>
         </div>
     </section>

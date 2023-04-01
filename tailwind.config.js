@@ -26,6 +26,12 @@ module.exports = {
         '-top-banner': '-202px',
         '-60':'60px'
       },
+      borderRadius:{
+        'v-player': '45px'
+      },
+      boxShadow:{
+        'v-player': '0px 8.14769172668457px 63.14461135864258px 0px rgba(0, 0, 0, 0.15)'
+      }
     },backgroundColor: theme => ({
       ...theme('colors'),
       'default': '#374754',
