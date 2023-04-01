@@ -11,6 +11,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor: theme => theme('colors'),
+     textColor: {
+       'default': '#374754',
+       'primary': '#2091F9',
+       'title-color': "#252B42"
+     },
       fontFamily: {
         sans: ['Graphik-regular', 'sans-serif', ...defaultTheme.fontFamily.sans],
         'bold': ['Graphik-bold', 'sans-serif'],
@@ -39,13 +45,25 @@ module.exports = {
         }],
         '4xl': '2.25rem',
         '5xl': '3rem',
-        '6xl': ['4.625rem',{
+        'h1': ['4.625rem',{
           lineHeight: '5.625rem',
+        }],
+        'h2': ['3rem',{
+          lineHeight: '3.438rem',
+        }],
+        'h4': ['1.5rem',{
+          lineHeight: '2.5rem',
+        }],
+        'h3': ['1.25rem',{
+          lineHeight: '1.75rem',
         }],
        '7xl': '5rem',
     },
     minHeight:{
       'banner':'885px'
+    },
+    maxWidth:{
+      'head-featurs' : '552px'
     }
   },
   plugins: [
@@ -72,6 +90,17 @@ module.exports = {
           '.container-medium': {
             maxWidth: '826px',
             padding: '1.875rem'
+          },
+          '.features__content':{
+            maxWidth: '869px',
+          },
+          '.features__content-item':{
+            paddingLeft: '1.563rem',
+            paddingRight: '1.563rem'
+          },
+          '.features__content-wrapper':{
+            marginLeft: '-1.563rem',
+            marginRight: '-1.563rem'
           }
       })
     }

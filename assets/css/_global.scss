@@ -1,3 +1,6 @@
+body , html{
+    @apply text-default;
+}
 .container{
     @apply  mx-auto px-10;
 }

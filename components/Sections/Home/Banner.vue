@@ -3,7 +3,7 @@
         <div class="banner__wrapper relative  min-h-banner flex flex-col	 justify-center ">
             <div class="banner__content relative z-10 text-center">
                 <div class="container-medium">
-                    <h1 class="text-6xl font-bold text-white">The best products start with Figma</h1>
+                    <h1 class="text-h1 font-bold text-white">The best products start with Figma</h1>
                     <h4 class="text-3xl text-white mt-10">Most calendars are designed for teams. Slate is designed for freelancers</h4>
                     <div class="banner__button -mt-60">
                         <NuxtLink to="#" class="btn btn-primary">Try For Free</NuxtLink>
