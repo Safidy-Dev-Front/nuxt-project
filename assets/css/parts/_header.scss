@@ -1,0 +1,9 @@
+.header__nav{
+    @apply flex justify-between items-center;
+}
+.header__menu-item{
+    @apply inline-block;
+}
+.header__menu-link{
+    @apply p-2.5 text-white;
+}

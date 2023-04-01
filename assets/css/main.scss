@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './global';
+@import './modules/typograph';
 //parts===============
 @import './parts/header';
 @import './parts/footer';
