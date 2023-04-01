@@ -4,6 +4,10 @@
 
 @import './global';
 @import './modules/typograph';
+//Components==========
+@import './components/buttons';
 //parts===============
 @import './parts/header';
 @import './parts/footer';
+//sections============
+@import './sections/banner';

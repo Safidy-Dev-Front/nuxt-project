@@ -1,7 +1,7 @@
 <template>
-    <header class="bg-red-100">
+    <header class=" z-20 relative">
         <div class="container header_container ">
-            <div class="header__nav">
+            <div class="header__nav py-10">
                 <div class="header__menu-logo flex justify-between items-center	">
                     <div class="header__nav-menu">
                         <ul class="header__main-menu">
