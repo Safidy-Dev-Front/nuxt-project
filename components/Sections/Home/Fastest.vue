@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="fastest__wrapper-item md:w-1/2 w-full">
-                    <div class="fastest__item-content mt-6 md:mt-0">
+                    <div class="fastest__item-content mt-6 md:mt-0 mx-auto">
                         <img src="images/fastest.png" alt="fastest"/>
                     </div>
                 </div>
