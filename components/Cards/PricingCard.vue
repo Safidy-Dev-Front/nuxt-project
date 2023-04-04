@@ -1,5 +1,5 @@
 <template>
-    <div :class="type=='Standard'? 'card-pricing__wrapper text-center bg-primary standard text-white py-20 p-10' : 'card-pricing__wrapper text-center bg-white p-10'">
+    <div :class="type=='Standard'? 'card-pricing__wrapper text-center bg-primary standard text-white lg:py-20 p-10' : 'card-pricing__wrapper text-center bg-white p-10'">
         <div class="card-pricing__head m-auto">
             <h3 class="font-bold text-h3 uppercase">{{type}}</h3>
             <p>{{description}}</p>

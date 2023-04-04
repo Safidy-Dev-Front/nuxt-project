@@ -1,9 +1,9 @@
 <template>
     <header class=" z-20 relative">
         <div class="container header_container ">
-            <div class="header__nav py-4">
+            <div class="header__nav py-4 items-center">
                 <div class="header__menu-logo flex justify-between items-center	">
-                    <div class="header__nav-menu">
+                    <div :class="headerNavMenu">
                         <ul class="header__main-menu">
                             <li class="header__menu-item">
                                 <NuxtLink to="/" class="header__menu-link">Home</NuxtLink>
@@ -22,7 +22,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__nav-logo p-8">
+                    <div class="header__nav-logo md:pl-8">
                         <NuxtLink to="/">
                             <img src="images/logo-nuxt-project.png" alt="logo-nuxt-project" />
                         </NuxtLink>
@@ -53,7 +53,37 @@
 
                     </a>
                 </div>
+                <div :class="classButtonBurger">
+                    <button @click="menuWhere">
+                        <span class="block burger-top"></span>
+                        <span class="block burger-center"></span>
+                        <span class="block burger-bottom"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 </template>
+<script >
+    export default{
+        name:'Header', 
+        data(){
+            return{
+                headerNavMenu:{
+                    "header__nav-menu":true,
+                    "isWhere":false
+                }, 
+                classButtonBurger:{
+                    'header__nav-burger':true,
+                    'menuWhere': false
+                }
+            }
+        },
+        methods:{
+            menuWhere(){
+                this.headerNavMenu.isWhere = !this.headerNavMenu.isWhere;
+                this.classButtonBurger.menuWhere = !this.classButtonBurger.menuWhere;
+            }
+        }
+    }
+</script>

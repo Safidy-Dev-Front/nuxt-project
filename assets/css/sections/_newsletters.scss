@@ -1,12 +1,14 @@
 .newsletters__illustration{
-    width: calc(100% - 544px);
+    @apply w-full ;
+    // @layer{
+    //     md:w-news-illustration;
+    // }
     svg{
         @apply w-full;
     }
 }
 .newsletters__content{
-    width: 544px;
-
+    @apply w-full ;
 }
 .newsletters__item-head h3{
     margin-bottom: 7px;

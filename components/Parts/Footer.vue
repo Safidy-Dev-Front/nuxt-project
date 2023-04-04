@@ -1,9 +1,9 @@
 <template>
     <footer class="bg-dark text-white py-36">
         <div class="container">
-            <div class="footer__wrapper flex justify-between">
-                <div class="footer__navigations flex justify-between">
-                    <div class="footer__pages flex-1">
+            <div class="footer__wrapper flex  justify-between">
+                <div class="footer__navigations flex  justify-between text-center md:text-left">
+                    <div class="footer__pages flex-1 ">
                         <p class="font-bold">Pages</p>
                         <ul class="footer__pages-menu">
                             <li>
@@ -23,7 +23,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__tomothy flex-1">
+                    <div class="footer__tomothy flex-1 ">
                         <p class="font-bold">Tomothy</p>
                         <ul class="footer__tomothy-menu">
                             <li>
@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__jane-black flex-1">
+                    <div class="footer__jane-black flex-1 ">
                         <p class="font-bold">Jane black</p>
                         <ul class="footer__jane-black-menu">
                             <li>

@@ -6,7 +6,7 @@
                 <p class="text-h4">Most calendars are designed for teams. Slate is designed for freelancers</p>
             </div>
             <div class="pricing__content">
-                <div class="pricing__content-wrapper flex">
+                <div class="pricing__content-wrapper flex flex-wrap">
                     <div v-for="pricing in pricings" class="pricing__item flex-1">
                         <CardsPricingCard 
                         :type="pricing.type" 

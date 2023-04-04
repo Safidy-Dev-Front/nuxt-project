@@ -28,13 +28,15 @@ module.exports = {
         '-60':'60px'
       },
       borderRadius:{
-        'v-player': '45px'
+        'v-player': '45px',
+        'v-player-mobile': '26px'
       },
       boxShadow:{
         'v-player': '0px 8.14769172668457px 63.14461135864258px 0px rgba(0, 0, 0, 0.15)'
       },
       maxWidth:{
-        'play-icon':'187.4px'
+        'play-icon':'187.4px',
+        'features':'255px'
       },
       maxHeight:{
         'play-icon':'187.4px'
@@ -46,10 +48,16 @@ module.exports = {
         'play-icon': '61.42px'
       },
       padding:{
-        'logo-partners':'30px'
+        'logo-partners':'30px',
+        '50px':'50px'
       },
       borderColor:{
         'l-gray': '#D8D8D8'
+      },
+      with:{
+        'news-illustration':'calc(100% - 544px)',
+        'news-content':'544px',
+
       }
 
     },backgroundColor: theme => ({
@@ -94,7 +102,7 @@ module.exports = {
     },
     maxWidth:{
       'head-featurs' : '552px'
-    }
+    },
   },
   plugins: [
     function ({ addComponents }) {

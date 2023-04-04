@@ -1,0 +1,59 @@
+//String-Replace ======================
+//===============================
+@function str-replace($string, $shearch, $replace: " ") {
+    $index: str-index($string, $shearch);
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($shearch)), $shearch, $replace);
+    }
+    @return $string;
+}
+
+//Font-face =====================
+//===============================
+@mixin font-face($name, $path, $weigth: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( eot: '?', svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( otf: "opentype", ttf: "truetype");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weigth;
+        src: $src;
+    }
+}
+
+//Effect hover ================================
+//=============================================
+//=============== Link ================
+@mixin underline_Link( $color: $White) {
+    &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: $color;
+        bottom: -1px;
+        position: absolute;
+        left: 0;
+        transition: width 0.3s;
+    }
+}
+
+@mixin down($Maxwidth-screen) {
+    @media screen and (max-width: $Maxwidth-screen) {
+        @content
+    }
+    ;
+}
+
+@mixin up($Minwidth-screen) {
+    @media screen and (min-width: $Minwidth-screen) {
+        @content
+    }
+    ;
+}

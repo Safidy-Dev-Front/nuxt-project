@@ -12,3 +12,16 @@
 .footer__contact > div{
     padding-bottom: 15px;
 }
+@include down(768px){
+    .footer__wrapper{
+        flex-direction: column;
+        @apply w-full mx-auto;
+        max-width: 384px;
+    }
+    .footer__navigations{
+        flex-direction: column;
+        &>div {
+            @apply pb-11;
+        }
+    }
+}

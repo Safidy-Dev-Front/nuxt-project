@@ -5,6 +5,13 @@
     border-radius: 10px;
     &.standard{
         margin-top: -40px;
+        @include down(1149px){
+        margin-top: 0;
+        @apply py-10;
+        }
+    }
+    @include down(1149px){
+        @apply mb-14;	
     }
 }
 .card-pricing__head{
