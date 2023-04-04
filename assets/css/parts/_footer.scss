@@ -1,0 +1,14 @@
+.footer__navigations{
+    @apply w-full;
+    max-width: 570px;
+}
+.footer__navigations ul{
+    margin-top: 15px;
+}
+.footer__navigations li{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.footer__contact > div{
+    padding-bottom: 15px;
+}

@@ -1,0 +1,19 @@
+.newsletters__illustration{
+    width: calc(100% - 544px);
+    svg{
+        @apply w-full;
+    }
+}
+.newsletters__content{
+    width: 544px;
+
+}
+.newsletters__item-head h3{
+    margin-bottom: 7px;
+}
+.newsletters__item-head h2{
+    margin-bottom: 15px;
+}
+.newsletters__content button{
+    @apply px-11;
+}

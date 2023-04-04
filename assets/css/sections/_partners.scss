@@ -1,0 +1,10 @@
+.partners__head{
+    max-width: 444px;
+    h2{
+        padding-bottom: 10px;
+    }
+}
+.partners__item{
+    @apply border;
+    border-color: #d8d8d8;
+}

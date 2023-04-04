@@ -1,0 +1,9 @@
+.video-player__icon-play{
+    width: 13.5vw;
+    height: 13.5vw;
+    @apply rounded-full absolute bg-primary left-0 right-0 top-0 bottom-0 m-auto flex flex-col justify-center max-w-play-icon max-h-play-icon min-w-play-icon min-h-play-icon;
+    svg{
+        @apply m-auto;
+        width: 24%;
+    }
+}

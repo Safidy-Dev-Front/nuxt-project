@@ -2,5 +2,11 @@
    <div>
     <SectionsHomeBanner/>
     <SectionsHomeFeatures/>
+    <SectionsHomeFastest/>
+    <SectionsHomeNewsletters/>
+    <SectionsHomePartners/>
+    <SectionsHomeTestimonials/>
+    <SectionsHomePricing/>
+    <SectionsHomeContactUs/>
    </div>
 </template>

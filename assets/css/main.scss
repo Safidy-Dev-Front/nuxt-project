@@ -6,9 +6,17 @@
 @import './modules/typograph';
 //Components==========
 @import './components/buttons';
+@import './components/video-player';
+@import './components/input';
 //parts===============
 @import './parts/header';
 @import './parts/footer';
 //sections============
 @import './sections/banner';
 @import './sections/features';
+@import './sections/fastest';
+@import './sections/newsletters';
+@import './sections/partners';
+@import './sections/testimonials';
+@import './sections/pricing';
+@import './sections/contact-us';

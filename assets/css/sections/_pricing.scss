@@ -1,0 +1,26 @@
+
+//Card=======================
+.card-pricing__wrapper{
+    border: solid rgba(222, 222, 222, 1) 1px;
+    border-radius: 10px;
+    &.standard{
+        margin-top: -40px;
+    }
+}
+.card-pricing__head{
+    max-width: 148px;
+
+}
+.card-pricing__price{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card-pricing_number{
+    padding-right: 10px;
+}
+.card-pricing__list li{
+    padding: 10px;
+}
+.card-pricing__foot{
+    padding-top: 30px;
+}

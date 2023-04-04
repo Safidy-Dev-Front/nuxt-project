@@ -1,0 +1,14 @@
+.field-group input{
+    @apply rounded-full p-5	text-black focus:outline-none placeholder-black;
+    background-color: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(232, 232, 232, 1);
+}
+.field-group textarea{
+    background-color: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(232, 232, 232, 1);
+    @apply p-5 text-black focus:outline-none placeholder-black;
+    
+}
+.contact-us__part-form textarea{
+    height: 193px;
+}

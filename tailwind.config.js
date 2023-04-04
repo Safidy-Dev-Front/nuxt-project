@@ -15,7 +15,8 @@ module.exports = {
      textColor: {
        'default': '#374754',
        'primary': '#2091F9',
-       'title-color': "#252B42"
+       'title-color': "#252B42",
+       'black':"rgba(24, 23, 29, 1)"
      },
       fontFamily: {
         sans: ['Graphik-regular', 'sans-serif', ...defaultTheme.fontFamily.sans],
@@ -31,11 +32,31 @@ module.exports = {
       },
       boxShadow:{
         'v-player': '0px 8.14769172668457px 63.14461135864258px 0px rgba(0, 0, 0, 0.15)'
+      },
+      maxWidth:{
+        'play-icon':'187.4px'
+      },
+      maxHeight:{
+        'play-icon':'187.4px'
+      },
+      minWidth:{
+        'play-icon': '61.42px'
+      },
+      minHeight:{
+        'play-icon': '61.42px'
+      },
+      padding:{
+        'logo-partners':'30px'
+      },
+      borderColor:{
+        'l-gray': '#D8D8D8'
       }
+
     },backgroundColor: theme => ({
       ...theme('colors'),
       'default': '#374754',
       'primary': '#2091F9',
+      'dark':'rgba(37, 43, 66, 1)'
      }),
     fontSize:{
         'xs': '.75rem',
@@ -63,6 +84,9 @@ module.exports = {
         'h3': ['1.25rem',{
           lineHeight: '1.75rem',
         }],
+        'small':['0.938rem',{
+          lineHeight: '1.75rem',
+        }],
        '7xl': '5rem',
     },
     minHeight:{
@@ -84,10 +108,10 @@ module.exports = {
             maxWidth: '768px',
           },
           '@screen lg': {
-            maxWidth: '1210px',
+            maxWidth: '1440px',
           },
           '@screen xl': {
-            maxWidth: '1210px',
+            maxWidth: '1440px',
           },
           },
           '.header__nav-network': {
@@ -100,13 +124,16 @@ module.exports = {
           '.features__content':{
             maxWidth: '869px',
           },
-          '.features__content-item':{
+          '.features__content-item , .pricing__item , .contact-us__part-head , .contact-us__info':{
             paddingLeft: '1.563rem',
             paddingRight: '1.563rem'
           },
-          '.features__content-wrapper':{
+          '.features__content-wrapper, .pricing__content-wrapper , .contact-us__wrapper':{
             marginLeft: '-1.563rem',
             marginRight: '-1.563rem'
+          },
+          '.section__head':{
+            maxWidth: '444px'
           }
       })
     }
