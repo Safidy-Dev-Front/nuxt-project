@@ -1,12 +1,12 @@
 <template>
-    <section id="banner"  class="-mt-top-banner">
+    <section id="banner"  class="section_banner ">
         <div class="banner__wrapper relative  min-h-banner flex flex-col justify-center ">
             <div class="banner__content relative z-10 text-center">
                 <div class="container-medium">
-                    <h1 class="md:text-h1 text-h2 md:font-bold text-white">The best products start with Figma</h1>
-                    <h4 class="text-3xl text-white mt-10">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+                    <h1 class="md:text-h1 text-h2 md:font-bold text-white reveal">The best products start with Figma</h1>
+                    <h4 class="text-3xl text-white mt-10 reveal">Most calendars are designed for teams. Slate is designed for freelancers</h4>
                     <div class="banner__button -mt-60">
-                        <NuxtLink to="#" class="btn btn-primary">Try For Free</NuxtLink>
+                        <NuxtLink to="#" class="btn btn-primary reveal">Try For Free</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -16,3 +16,8 @@
         </div>
     </section>
 </template>
+<script>
+    export default{
+        name:"Banner"
+    }
+</script>

@@ -1,68 +1,93 @@
-.header__nav{
+.header_container {
+    @apply lg:pt-6;
+}
+
+.header__nav {
     @apply flex justify-between items-center;
 }
-.header__menu-item{
+
+.header__menu-item {
     @apply inline-block;
 }
-.header__menu-link{
+
+.header__menu-link {
     @apply p-2.5 text-white;
 }
-.header__nav-menu{
+
+.header__nav-menu {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    @include down(991px){
-        @apply fixed top-0 left-auto right-0 h-full w-full bg-white flex flex-col justify-start pt-20 pl-6  ;
+
+    @include down(991px) {
+        @apply fixed top-0 left-auto right-0 h-full w-full bg-white flex flex-col justify-start pt-20 pl-6;
         right: -100%;
-        a{
+
+        a {
             @apply text-default text-3xl;
         }
-        li{
-            @apply block;
+
+        li {
+            @apply block pb-6;
         }
-        &.isWhere{
-        right: 0;
+
+        &.isWhere {
+            right: 0;
         }
     }
 }
-.header__nav-burger{
-    @include up(992px){
-        @apply hidden;
-    }
-}
-.header__nav-network{
-    @include down(768px){
+
+.header__nav-burger {
+    @include up(992px) {
         @apply hidden;
     }
 }
 
-.header__nav-burger span{
+.header__nav-network {
+    @include down(768px) {
+        @apply hidden;
+    }
+}
+
+.header__nav-burger span {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     height: 2px;
     @apply bg-white ml-auto my-1;
-    &.burger-top{
+
+    &.burger-top {
         width: 26.67px;
 
     }
-    &.burger-center{
+
+    &.burger-center {
         width: 20px;
     }
-    &.burger-bottom{
+
+    &.burger-bottom {
         width: 12px;
-        
+
     }
 }
-.header__nav-burger{
+
+.header__nav-burger {
     @apply z-50;
-    &.menuWhere span{
-    @apply bg-dark;
-        &.burger-center{
+
+    &.menuWhere {
+        @apply fixed left-auto;
+        right: 26px;
+    }
+
+    &.menuWhere span {
+        @apply bg-dark;
+        &.burger-center {
             opacity: 0;
             width: 26.67px;
         }
-        &.burger-top{
+
+        &.burger-top {
             transform: translateY(6px) rotate(45deg);
         }
-        &.burger-bottom{
+
+        &.burger-bottom {
             transform: translateY(-6px) rotate(-45deg);
             width: 26.67px;
         }

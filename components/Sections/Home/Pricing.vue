@@ -2,8 +2,8 @@
     <section id="pricing" class="py-20 bg-dark">
         <div class="container">
             <div class="pricing__head section__head text-center m-auto mb-20 text-white">
-                <h2 class="text-h2">Pricing</h2>
-                <p class="text-h4">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <h2 class="text-h2 mb-8 reveal">Pricing</h2>
+                <p class="text-h4 reveal">Most calendars are designed for teams. Slate is designed for freelancers</p>
             </div>
             <div class="pricing__content">
                 <div class="pricing__content-wrapper flex flex-wrap">

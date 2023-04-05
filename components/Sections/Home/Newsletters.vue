@@ -2,11 +2,11 @@
     <section id="newsletters">
         <div class="container">
             <div class="newsletters__item-head md:hidden block mt-20 text-center">
-                    <h3 class="font-bold">At your fingertips</h3>
-                    <h2 class="text-h2">Lightning fast prototyping </h2>
+                    <h3 class="font-bold reveal">At your fingertips</h3>
+                    <h2 class="text-h2 reveal">Lightning fast prototyping </h2>
                 </div>
             <div class="newsletters__wrapper md:flex items-center">
-                <div class="newsletters__item newsletters__illustration md:w-news-illustration w-full">
+                <div class="reveal newsletters__item newsletters__illustration md:w-news-illustration w-full">
                     <svg width="678" height="515" viewBox="0 0 678 515" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_66_3842)">
                             <path
@@ -204,13 +204,13 @@
             </div>
             <div class="newsletters__item newsletters__content md:news-content md:px-14">
                 <div class="newsletters__item-head hidden md:block">
-                    <h3 class="font-bold">At your fingertips</h3>
-                    <h2 class="text-h2">Lightning fast prototyping </h2>
+                    <h3 class="font-bold reveal">At your fingertips</h3>
+                    <h2 class="text-h2 reveal">Lightning fast prototyping </h2>
                 </div>
                 <div class="newsletters__item-form text-center md:text-left">
-                    <h3 class="font-bold">Subscribe to our Newsletter</h3>
-                    <p>Available exclusivery on Figmaland</p>
-                    <form action="" class="py-9">
+                    <h3 class="font-bold reveal">Subscribe to our Newsletter</h3>
+                    <p class="reveal">Available exclusivery on Figmaland</p>
+                    <form action="" class="reveal py-9">
                         <div class="field-group flex flex-wrap md:no-wrap w-full">
                             <input type="mail" placeholder="Your Email" class="md:w-auto w-full"/>
                             <button type="submit" class="btn btn-primary md:w-auto w-full md:mt-0 mt-3">Subscribe</button>

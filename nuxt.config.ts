@@ -8,4 +8,8 @@ export default defineNuxtConfig({
           autoprefixer: {},
         },
       },
+      plugins:[{src:'~/plugins/gsap', ssr:true}],
+      build: {
+        transpile: ['gsap'],
+      },
 })

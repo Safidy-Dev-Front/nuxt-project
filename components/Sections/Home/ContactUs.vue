@@ -1,17 +1,17 @@
 <template>
     <section id="contact-us" class="py-20">
         <div class="container">
-            <div class="contact-us__head section__head text-center m-auto mb-20">
-                <h2 class="text-h2">Contact Us</h2>
-                <p class="text-h4">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="contact-us__head section__head text-center m-auto mb-20" >
+                <h2 class="text-h2 mb-8 reveal">Contact Us</h2>
+                <p class="text-h4 reveal">Most calendars are designed for teams. Slate is designed for freelancers</p>
             </div>
             <div class="contact-us__content">
                 <div class="contact-us__wrapper flex flex-wrap m-auto items-center w-full ">
                     <div class="contact-us__part-form p-14 order-2 md:order-1">
                         <div class="contact-us__part-head text-center pb-5">
-                            <p class="font-bold">Contact US</p>
+                            <p class="font-bold reveal">Contact US</p>
                         </div>
-                        <form>
+                        <form >
                             <div class="field-group py-5">
                                 <input type="text" class="w-full" placeholder="Your name" />
                             </div>
@@ -28,24 +28,24 @@
                     </div>
                     <div class="contact-us__info order-1 md:order-2 flex flex-col">
                         <div class="contact-us__info-head md:flex flex-none order-2 md:order-1 items-center md:text-center">
-                            <div class="contact-us__info-item flex md:block pb-2.5 md:flex-none">
+                            <div class="reveal contact-us__info-item flex md:block pb-2.5 md:flex-none">
                                 <img src="images/bx_bx-map.png" class="md:m-auto ml-0" alt="map">
                                 <p>6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
                             </div>
-                            <div class="contact-us__info-item flex md:block pb-2.5 md:flex-none">
+                            <div class="reveal contact-us__info-item flex md:block pb-2.5 md:flex-none">
                                 <img src="images/ic_baseline-phone-android.png" class="md:m-auto ml-0" alt="phone">
                                 <p>(843) 555-0130</p>
                             </div>
-                            <div class="contact-us__info-item flex md:block pb-2.5 md:flex-none">
+                            <div class="reveal contact-us__info-item flex md:block pb-2.5 md:flex-none">
                                 <img src="images/ant-design_mail-outlined.png" class="md:m-auto ml-0" alt="mail">
                                 <p>willie.jennings@example.com</p>
                             </div>
                         </div>
-                        <div class="contact-us__map-screen hidden md:block md:order-2">
+                        <div class="reveal contact-us__map-screen hidden md:block md:order-2">
                             <img src="images/map_screen.png" class="m-auto w-full h-auto" alt="map screen" />
                         </div>
-                        <div class="contact-us__network flex justify-center md:justify-start pb-14 md:pb-0 order-1 md:order-3">
-                            <a href="https://tweeter.com" target="_blank" class="contact-us__network-link px-3">
+                        <div class=" contact-us__network flex justify-center md:justify-start pb-14 md:pb-0 order-1 md:order-3">
+                            <a href="https://tweeter.com" target="_blank" class="reveal contact-us__network-link px-3">
                                 <svg width="34" height="28" viewBox="0 0 34 28" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -54,7 +54,7 @@
                                 </svg>
 
                             </a>
-                            <a href="https://facebook.com" target="_blank" class="contact-us__network-link px-3">
+                            <a href="https://facebook.com" target="_blank" class="reveal contact-us__network-link px-3">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -62,7 +62,7 @@
                                         fill="#2091F9" />
                                 </svg>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" class="contact-us__network-link px-3">
+                            <a href="https://linkedin.com" target="_blank" class="reveal contact-us__network-link px-3">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -83,6 +83,12 @@ export default {
     name: "ContactUs",
     data() {
 
+    }
+    ,
+    methods:{
+        contacIter(){
+            console.log("Salut les gens");
+        }
     }
 }
 </script>
