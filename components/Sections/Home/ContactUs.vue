@@ -12,16 +12,16 @@
                             <p class="font-bold reveal">Contact US</p>
                         </div>
                         <form >
-                            <div class="field-group py-5">
+                            <div class="field-group py-5 reveal">
                                 <input type="text" class="w-full" placeholder="Your name" />
                             </div>
-                            <div class="field-group py-5">
+                            <div class="field-group py-5 reveal">
                                 <input type="mail" class="w-full" placeholder="Your Email" />
                             </div>
-                            <div class="field-group py-5">
+                            <div class="field-group py-5 reveal">
                                 <textarea name="message" class="w-full" id="" placeholder="Your Message"></textarea>
                             </div>
-                            <div class="field-group pt-10">
+                            <div class="field-group pt-10 reveal">
                                 <button type="submit" class="btn btn-primary block w-max">Send</button>
                             </div>
                         </form>

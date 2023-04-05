@@ -1,9 +1,17 @@
 .btn{
     @apply px-14 py-4 rounded-full;
+    transition: .3s;
 }
 .btn-primary{
     @apply text-white bg-primary;
 }
+.btn-primary:hover{
+    // @apply bg-transparent;
+    background-color: #0261bb;
+}
 .btn-secondary{
     @apply bg-white text-primary;
+}
+.btn-secondary:hover{
+    @apply text-white bg-dark;
 }

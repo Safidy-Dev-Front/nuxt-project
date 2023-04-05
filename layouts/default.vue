@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div ref="main">
         <PartsHeader />
         <transition appear @before-enter="beforEnter" @enter="enter">
-            <main ref="main">
+            <main >
                 <NuxtPage />
             </main>
         </transition>
